@@ -2,13 +2,15 @@ import { Book, BookHeart, GraduationCap, Music } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import foto from "@/app/public/arteEducacaoFoto.png";
+import foto from "@/app/public/arteEducacao1.webp";
 import foto1 from "@/app/public/arteEducacaoFoto2.jpg";
 import foto2 from "@/app/public/arteEducacaoFoto3.jpg";
+import foto3 from "@/app/public/arteEducacao4.jpg";
+import foto4 from "@/app/public/arteEducacao5.jpg";
 
 export default function ArteEducacaoSemFronteiras() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [foto, foto1, foto2];
+  const images = [foto, foto1, foto2, foto3, foto4];
   const imageRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -56,18 +58,33 @@ export default function ArteEducacaoSemFronteiras() {
     <div className="w-full h-screen flex flex-col justify-center items-center pb-6 ">
       <div className="pt-6">
         <h1 className="w-full text-center text-2xl font-semibold">
-          Arte e educação sem Fronteiras
+          Arte e Educação Sem Fronteiras: Onde o Conhecimento Encontra a Esperança
         </h1>
         <div className="w-full flex justify-center items-center">
           <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
         </div>
       </div>
       <div className="w-[80%] h-full flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-l-xl border-corRetratos">
-          texto falando sobre
+        <div className="flex-1 border-2 rounded-l-xl border-corRetratos p-4 text-justify flex justify-center items-start">
+          Na Vila Esperança, acreditamos que a educação é a chave para quebrar ciclos de pobreza e abrir portas para um futuro com mais oportunidades. Por isso, o projeto Arte e Educação Sem Fronteiras atua diariamente com ações educativas que transformam vidas desde a infância até a fase adulta.
+          <br />
+          Oferecemos reforço escolar contínuo para crianças, jovens e adultos, promovendo o acesso ao aprendizado de qualidade, um direito básico muitas vezes negado em comunidades vulneráveis.
+          <br />
+          Além das aulas de reforço, o projeto também oferece:
+          <br />
+          - Aulas de música
+          <br />
+          - Capoeira e práticas esportivas
+          <br />
+          - Oficinas de arte e atividades culturais
+          <br />
+          Essas atividades não apenas fortalecem o desenvolvimento acadêmico, mas também trabalham a autoestima, disciplina e criatividade dos participantes.
+          <br />
+          Hoje, celebramos uma grande conquista: um morador da Vila Esperança ingressou no ensino superior, o primeiro de sua geração a entrar na universidade, graças ao apoio contínuo do projeto. Um exemplo vivo de que com educação, sonhos se tornam realidade.
+          Através da arte, do ensino e da inclusão, seguimos rompendo barreiras e semeando um futuro de possibilidades.
         </div>
         <div
-          className="flex-1 relative rounded-r-xl overflow-hidden"
+          className="flex-1 relative rounded-r-xl overflow-hidden border-2 border-corRetratos"
           ref={imageRef} // Referência para a animação
         >
           <Image

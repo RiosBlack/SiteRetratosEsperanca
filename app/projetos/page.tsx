@@ -12,6 +12,7 @@ import FrutosEsperanca from "../_components/projetos/FrutosEsperanca";
 import CineEsperanca from "../_components/projetos/CineEsperanca";
 import GeracaoRenda from "../_components/projetos/GeracaoRenda";
 import ArteEducacaoSemFronteiras from "../_components/projetos/ArteEducacaoSemFronteiras";
+import VilaEsperanca from "../_components/projetos/VilaEsperanca";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,6 +23,7 @@ export default function Page() {
   const session4 = useRef<HTMLDivElement | null>(null);
   const session5 = useRef<HTMLDivElement | null>(null);
   const session6 = useRef<HTMLDivElement | null>(null);
+  const session7 = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (window.location.hash === "#frutosEsperanca") {
@@ -36,7 +38,9 @@ export default function Page() {
     if (window.location.hash === "#ArteEducacaoSemFronteiras") {
       session6.current?.scrollIntoView({ behavior: "smooth" });
     }
-
+    if (window.location.hash === "#VilaEsperanca") {
+      session7.current?.scrollIntoView({ behavior: "smooth" });
+    }
     gsap.fromTo(
       session1.current,
       { opacity: 0 },
@@ -137,6 +141,9 @@ export default function Page() {
         <span className="z-10 absolute bottom-9 right-40 animate-pulse bg-white flex p-2 rounded-xl">
           Rolar <ChevronsDown />
         </span>
+      </div>
+      <div ref={session7}>
+        <VilaEsperanca />
       </div>
       <div ref={session2}>
         <CozinhaComunitaria />

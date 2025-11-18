@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import foto from "@/app/public/fotosGeracaoRenda.jpg";
-import foto1 from "@/app/public/fotosGeracaoRenda2.jpg";
-import foto2 from "@/app/public/fotosGeracaoRenda3.jpg";
+import foto from "@/app/public/fotoGeracaoRenda1.jpg";
+import foto1 from "@/app/public/fotoGeracaoRenda2.jpg";
+import foto2 from "@/app/public/fotoGeracaoRenda3.jpg";
 import { User } from "lucide-react";
 
 export default function GeracaoRenda() {
@@ -38,21 +38,27 @@ export default function GeracaoRenda() {
   ];
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center pb-6 ">
+    <div className="w-full h-screen flex flex-col justify-center items-center pb-6 bg-corRetratos bg-opacity-20">
       <div className="pt-6">
         <h1 className="w-full text-center text-2xl font-semibold">
-          Geração de renda
+          Geração de Renda: Autonomia que Transforma Vidas
         </h1>
         <div className="w-full flex justify-center items-center">
           <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
         </div>
       </div>
       <div className="w-[80%] h-full flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-l-xl border-corRetratos">
-          texto falando sobre
+        <div className="flex-1 border-2 rounded-l-xl border-corRetratos p-4 text-justify flex justify-center items-start">
+          Na Vila Esperança, acreditamos que a transformação verdadeira acontece quando oferecemos oportunidades para que as pessoas se tornem protagonistas de suas próprias histórias.
+          <br />
+          Por meio de oficinas profissionalizantes, capacitamos mulheres e moradores da comunidade em atividades como artesanato e produção de materiais para comercialização. Além de aprenderem um ofício, os participantes ganham autoestima, independência financeira e a possibilidade de sonhar mais alto.
+          <br />
+          Essas ações não apenas geram renda, mas também fortalecem o sentimento de pertencimento, colaboração e dignidade.
+          <br />
+          Com trabalho e criatividade, estamos construindo um futuro mais justo, sustentável e cheio de esperança.
         </div>
         <div
-          className="flex-1 relative rounded-r-xl overflow-hidden"
+          className="flex-1 relative rounded-r-xl overflow-hidden border-2 border-corRetratos"
           ref={imageRef} // Referência para a animação
         >
           <Image

@@ -38,6 +38,12 @@ export function Header() {
           <NavigationMenuContent>
             <ul className="w-[200px] gap-3 p-4 md:w-[300px] md:grid-cols-2 lg:w-[400px] ">
               <ListItem
+                href="/projetos#VilaEsperanca"
+                title="Vila Esperança"
+              >
+                • Onde a Dignidade Recomeça
+              </ListItem>
+              <ListItem
                 href="/projetos#cozinhaComunitaria"
                 title="Cozinha Comunitária"
               >
