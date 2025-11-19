@@ -55,17 +55,17 @@ export default function ArteEducacaoSemFronteiras() {
   ];
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center pb-6 ">
+    <div className="w-full min-h-screen lg:h-screen flex flex-col justify-center items-center pb-6 px-4 lg:px-0">
       <div className="pt-6">
-        <h1 className="w-full text-center text-2xl font-semibold">
+        <h1 className="w-full text-center text-xl lg:text-2xl font-semibold px-4">
           Arte e Educação Sem Fronteiras: Onde o Conhecimento Encontra a Esperança
         </h1>
         <div className="w-full flex justify-center items-center">
           <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
         </div>
       </div>
-      <div className="w-[80%] h-full flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-l-xl border-corRetratos p-4 text-justify flex justify-center items-start">
+      <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
+        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base">
           Na Vila Esperança, acreditamos que a educação é a chave para quebrar ciclos de pobreza e abrir portas para um futuro com mais oportunidades. Por isso, o projeto Arte e Educação Sem Fronteiras atua diariamente com ações educativas que transformam vidas desde a infância até a fase adulta.
           <br />
           Oferecemos reforço escolar contínuo para crianças, jovens e adultos, promovendo o acesso ao aprendizado de qualidade, um direito básico muitas vezes negado em comunidades vulneráveis.
@@ -84,7 +84,7 @@ export default function ArteEducacaoSemFronteiras() {
           Através da arte, do ensino e da inclusão, seguimos rompendo barreiras e semeando um futuro de possibilidades.
         </div>
         <div
-          className="flex-1 relative rounded-r-xl overflow-hidden border-2 border-corRetratos"
+          className="flex-1 relative rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none overflow-hidden border-2 border-corRetratos min-h-[300px]"
           ref={imageRef} // Referência para a animação
         >
           <Image
@@ -95,7 +95,7 @@ export default function ArteEducacaoSemFronteiras() {
           />
         </div>
       </div>
-      <div className="w-[80%] mt-3 flex space-x-2">
+      <div className="w-full lg:w-[80%] mt-3 grid grid-cols-1 lg:flex lg:space-x-2 gap-4 lg:gap-0 px-4 lg:px-0">
         {arteTag.map((item, index) => (
           <div
             key={index}

@@ -4,7 +4,6 @@ import { gsap } from "gsap";
 import foto from "@/app/public/fotoVilaEsperanca1.jpg";
 import foto1 from "@/app/public/fotoSobreNós1.jpeg";
 import foto2 from "@/app/public/fotoVilaEsperanca2.jpg";
-import { User } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 
@@ -61,17 +60,17 @@ export default function VilaEsperanca() {
   }, []);
 
   return (
-    <div className="w-full flex flex-col justify-center items-center pb-6 bg-corRetratos bg-opacity-20">
+    <div className="w-full min-h-screen lg:h-screen flex flex-col justify-center items-center pb-6 bg-corRetratos bg-opacity-20 px-4 lg:px-0">
       <div className="pt-6">
-        <h1 className="w-full text-center text-2xl font-semibold">
+        <h1 className="w-full text-center text-xl lg:text-2xl font-semibold px-4">
           Vila Esperança: Onde a Dignidade Recomeça
         </h1>
         <div className="w-full flex justify-center items-center">
           <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
         </div>
       </div>
-      <div className="w-[80%] h-full flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-l-xl border-corRetratos p-4 text-justify flex justify-center items-center">
+      <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
+        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-center text-sm lg:text-base">
           A Vila Esperança é um símbolo vivo de transformação e solidariedade. O projeto nasceu em 2019, na cidade de Canudos (BA), com o objetivo de resgatar a dignidade de famílias que viviam em condições extremamente precárias.
           <br />
           Na época, mais de 20 famílias sobreviviam em casebres insalubres de pau a pique, sem acesso a água potável e em completa vulnerabilidade. Cada família dispunha de apenas 20 litros de água por mês, coletados após uma longa caminhada de mais de 3 quilômetros.
@@ -87,7 +86,7 @@ export default function VilaEsperanca() {
           Cada doação, cada gesto de apoio, é um passo rumo a um Brasil mais justo, humano e esperançoso.texto falando sobre
         </div>
         <div
-          className="flex-1 relative rounded-r-xl overflow-hidden border-2 border-corRetratos"
+          className="flex-1 relative rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none overflow-hidden border-2 border-corRetratos min-h-[300px]"
           ref={imageRef} // Referência para a animação
         >
           <video
@@ -105,9 +104,9 @@ export default function VilaEsperanca() {
           )}
         </div>
       </div>
-      <div className="w-[80%] mt-3 flex space-x-2 flex-col justify-center items-center">
-        <h2 className="text-xl font-semibold">Seja um padrinho ou madrinha da Vila Esperança</h2>
-        <div className="flex space-x-2 mt-3">
+      <div className="w-full lg:w-[80%] mt-3 flex flex-col justify-center items-center px-4">
+        <h2 className="text-lg lg:text-xl font-semibold text-center">Seja um padrinho ou madrinha da Vila Esperança</h2>
+        <div className="flex justify-center items-center sm:flex-row gap-2 mt-3 w-full sm:w-auto">
           <Link href="https://fraternidadesemfronteiras.colabore.org/apadrinheretratos/single_step" target="_blank">
             <Button className="bg-corRetratos hover:bg-corRetratos/80 text-white">
               Pessoa física

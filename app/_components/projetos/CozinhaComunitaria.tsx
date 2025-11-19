@@ -46,17 +46,17 @@ export default function CozinhaComunitaria() {
   ];
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center pb-6">
+    <div className="w-full min-h-screen lg:h-screen flex flex-col justify-center items-center pb-6 px-4 lg:px-0">
       <div className="pt-6">
-        <h1 className="w-full text-center text-2xl font-semibold">
+        <h1 className="w-full text-center text-xl lg:text-2xl font-semibold px-4">
           Cozinha Comunitária: Alimentando Corpos e Corações na Vila Esperança
         </h1>
         <div className="w-full flex justify-center items-center">
           <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
         </div>
       </div>
-      <div className=" w-[80%] h-full flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-l-xl border-corRetratos p-4 text-justify flex justify-center items-start">
+      <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
+        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base">
           Na Vila Esperança, a transformação vai além da moradia, ela chegou também à mesa. Através da Cozinha Comunitária, garantíamos mais de 140 refeições diárias para as famílias atendidas, promovendo saúde, dignidade e cuidado em cada prato.
           <br />
           Antes do projeto, muitas dessas famílias não tinham acesso regular a legumes, frutas ou refeições completas. Hoje, oferecemos uma alimentação equilibrada, preparada com carinho e pensada para atender as necessidades nutricionais de crianças.
@@ -66,13 +66,13 @@ export default function CozinhaComunitaria() {
           A Cozinha Comunitária é mais do que um espaço de alimentação, é um lugar de acolhimento, partilha e esperança.
         </div>
         <div
-          className="flex-1 relative rounded-r-xl overflow-hidden border-2 border-corRetratos"
+          className="flex-1 relative rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none overflow-hidden border-2 border-corRetratos min-h-[300px]"
           ref={imageRef}
         >
           <Image alt="Foto do carrossel" src={images[currentImageIndex]} fill objectFit="cover" />
         </div>
       </div>
-      <div className="w-[80%] mt-3 flex space-x-2">
+      <div className="w-full lg:w-[80%] mt-3 grid grid-cols-1 lg:flex lg:space-x-2 gap-4 lg:gap-0 px-4 lg:px-0">
         {cozinhaComunitariaTag.map((item, index) => (
           <div
             key={index}

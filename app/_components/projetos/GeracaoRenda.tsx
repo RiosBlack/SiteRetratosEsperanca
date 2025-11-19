@@ -38,17 +38,17 @@ export default function GeracaoRenda() {
   ];
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center pb-6 bg-corRetratos bg-opacity-20">
+    <div className="w-full min-h-screen lg:h-screen flex flex-col justify-center items-center pb-6 bg-corRetratos bg-opacity-20 px-4 lg:px-0">
       <div className="pt-6">
-        <h1 className="w-full text-center text-2xl font-semibold">
+        <h1 className="w-full text-center text-xl lg:text-2xl font-semibold px-4">
           Geração de Renda: Autonomia que Transforma Vidas
         </h1>
         <div className="w-full flex justify-center items-center">
           <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
         </div>
       </div>
-      <div className="w-[80%] h-full flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-l-xl border-corRetratos p-4 text-justify flex justify-center items-start">
+      <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
+        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base">
           Na Vila Esperança, acreditamos que a transformação verdadeira acontece quando oferecemos oportunidades para que as pessoas se tornem protagonistas de suas próprias histórias.
           <br />
           Por meio de oficinas profissionalizantes, capacitamos mulheres e moradores da comunidade em atividades como artesanato e produção de materiais para comercialização. Além de aprenderem um ofício, os participantes ganham autoestima, independência financeira e a possibilidade de sonhar mais alto.
@@ -58,7 +58,7 @@ export default function GeracaoRenda() {
           Com trabalho e criatividade, estamos construindo um futuro mais justo, sustentável e cheio de esperança.
         </div>
         <div
-          className="flex-1 relative rounded-r-xl overflow-hidden border-2 border-corRetratos"
+          className="flex-1 relative rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none overflow-hidden border-2 border-corRetratos min-h-[300px]"
           ref={imageRef} // Referência para a animação
         >
           <Image
@@ -69,7 +69,7 @@ export default function GeracaoRenda() {
           />
         </div>
       </div>
-      <div className="w-[80%] mt-3 flex space-x-2">
+      <div className="w-full lg:w-[80%] mt-3 grid grid-cols-1 lg:flex lg:space-x-2 gap-4 lg:gap-0 px-4 lg:px-0">
         {arteTag.map((item, index) => (
           <div
             key={index}

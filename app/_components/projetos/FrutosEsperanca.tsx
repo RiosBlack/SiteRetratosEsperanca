@@ -51,17 +51,17 @@ export default function FrutosEsperanca() {
   ];
 
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center pb-6 bg-corRetratos bg-opacity-20">
+    <div className="w-full min-h-screen lg:h-screen flex flex-col justify-center items-center pb-6 bg-corRetratos bg-opacity-20 px-4 lg:px-0">
       <div className="pt-6">
-        <h1 className="w-full text-center text-2xl font-semibold">
+        <h1 className="w-full text-center text-xl lg:text-2xl font-semibold px-4">
           Frutos de Esperança: Plantando o Futuro, Cuidando do Presente
         </h1>
         <div className="w-full flex justify-center items-center">
           <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
         </div>
       </div>
-      <div className=" w-[80%] h-full flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-l-xl border-corRetratos p-4 text-justify flex justify-center items-start">
+      <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
+        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base">
           O projeto Frutos de Esperança nasceu com a missão de trazer vida por meio daquilo que nos dá a vida: a natureza. Acreditamos que semeando consciência, colhemos transformação, e é exatamente isso que fazemos.
           <br />
           Nosso objetivo é educar, ensinar, transformar e conscientizar sobre a importância da preservação ambiental, promovendo ações que unem o cuidado com o meio ambiente ao desenvolvimento sustentável das comunidades atendidas.
@@ -75,11 +75,11 @@ export default function FrutosEsperanca() {
           Ao integrar natureza, educação e alimentação saudável, o Frutos de Esperança ajuda a construir um presente mais consciente e um futuro mais verde para todos.
           Vamos juntos cultivar esperança, uma muda, uma horta, uma comunidade de cada vez.
         </div>
-        <div className="flex-1 relative rounded-r-xl overflow-hidden border-2 border-corRetratos">
+        <div className="flex-1 relative rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none overflow-hidden border-2 border-corRetratos min-h-[300px]" ref={imageRef}>
           <Image alt="Foto do carrossel" src={images[currentImageIndex]} fill objectFit="cover" />
         </div>
       </div>
-      <div className="w-[80%] mt-3 flex space-x-2">
+      <div className="w-full lg:w-[80%] mt-3 grid grid-cols-1 lg:flex lg:space-x-2 gap-4 lg:gap-0 px-4 lg:px-0">
         {frutosEsperancaTag.map((item, index) => (
           <div
             key={index}
