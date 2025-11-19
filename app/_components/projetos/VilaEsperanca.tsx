@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import foto from "@/app/public/fotoVilaEsperanca1.jpg";
 import foto1 from "@/app/public/fotoSobreNós1.jpeg";
 import foto2 from "@/app/public/fotoVilaEsperanca2.jpg";
+import { User } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
 

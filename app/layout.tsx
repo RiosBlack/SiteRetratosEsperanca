@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Header } from "./_components/Header";
+import { InstagramLink } from "./_components/InstagramLink";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,6 +34,7 @@ export default function RootLayout({
           <Header />
         </div>
         {children}
+        <InstagramLink />
       </body>
     </html>
   );
