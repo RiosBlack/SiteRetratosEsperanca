@@ -55,22 +55,24 @@ export default function Page() {
   }, []);
 
   return (
-    <div>
-      <div className="h-screen">
-        <div className="relative flex justify-center items-center h-screen">
-          <iframe
-            width="1041"
-            height="526"
-            src="https://www.youtube.com/embed/CnRH3ayds-Y?autoplay=1"
-            title="Retratos de Esperança: Nossa Missão"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-            className="rounded-2xl z-10"
-          ></iframe>
+    <div className="pt-16 lg:pt-0">
+      <div className="min-h-screen">
+        <div className="relative flex justify-center items-center min-h-screen px-4 py-8">
+          <div className="w-full max-w-4xl aspect-video">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/CnRH3ayds-Y?autoplay=1"
+              title="Retratos de Esperança: Nossa Missão"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="rounded-2xl z-10"
+            ></iframe>
+          </div>
         </div>
-        <span className="absolute z-10 bottom-6 w-full text-center flex justify-center animate-pulse">
+        <span className="absolute z-10 bottom-6 w-full text-center flex justify-center animate-pulse text-sm lg:text-base">
           Rolar <ChevronsDown />
         </span>
         <Image
@@ -82,16 +84,16 @@ export default function Page() {
         />
       </div>
       <div
-        className="w-full flex flex-col items-center text-lg"
+        className="w-full flex flex-col items-center text-base lg:text-lg px-4"
         ref={sectionSession1}
       >
-        <h1 className="w-full text-center text-2xl font-semibold mt-10">
+        <h1 className="w-full text-center text-xl lg:text-2xl font-semibold mt-10">
           Quem somos?
         </h1>
         <div className="w-full flex justify-center items-center">
           <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
         </div>
-        <div className="w-[80%] mt-16 flex flex-col items-center space-y-5 pb-10">
+        <div className="w-full lg:w-[80%] mt-16 flex flex-col items-center space-y-5 pb-10">
           <h2>Há 10 anos, nossa organização vem transformando vidas no sertão da Bahia, promovendo ações que fazem a diferença em comunidades que enfrentam graves desafios de vulnerabilidade social.</h2>
           <p className="text-justify">
             Somos uma organização não governamental (ONG) sem fins lucrativos, com a missão de contribuir para a transformação de vidas e despertar humanidade, amor, compaixão e empatia. Nosso trabalho é focado em ações comunitárias nas áreas de assistência social, educação e saúde, sempre com o compromisso de atender às necessidades mais urgentes daquelas que mais precisam.
@@ -111,26 +113,26 @@ export default function Page() {
             <br />
             O trabalho de Bismark não só denuncia a pobreza e a miséria, mas também convida à ação, combatendo desigualdades e promovendo um olhar mais humano e atento às questões sociais que precisam ser enfrentadas com urgência.
           </p>
-          <div className="flex space-x-5">
-            <div className="relative w-60 h-72 rounded-xl overflow-hidden border-2 border-corRetratos">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-5 w-full lg:w-auto">
+            <div className="relative w-full lg:w-60 h-72 rounded-xl overflow-hidden border-2 border-corRetratos">
               <Image alt="background" src={foto1} fill objectFit="cover" />
             </div>
-            <div className="relative w-60 h-72 rounded-xl overflow-hidden border-2 border-corRetratos">
+            <div className="relative w-full lg:w-60 h-72 rounded-xl overflow-hidden border-2 border-corRetratos">
               <Image alt="background" src={foto3} fill objectFit="cover" />
             </div>
-            <div className="relative w-60 h-72 rounded-xl overflow-hidden border-2 border-corRetratos">
+            <div className="relative w-full lg:w-60 h-72 rounded-xl overflow-hidden border-2 border-corRetratos">
               <Image alt="background" src={foto2} fill objectFit="cover" />
             </div>
           </div>
         </div>
       </div>
       <div
-        className="w-full flex items-center justify-center pb-10 bg-corRetratos bg-opacity-20 text-lg"
+        className="w-full flex items-center justify-center pb-10 bg-corRetratos bg-opacity-20 text-base lg:text-lg px-4"
         ref={sectionSession2}
       >
-        <div className=" w-[80%] flex space-x-10" id="missao">
+        <div className="w-full lg:w-[80%] flex flex-col lg:flex-row gap-10 lg:gap-10" id="missao">
           <div className="flex flex-col flex-1 justify-center items-center">
-            <h1 className="w-full text-center text-2xl font-semibold mt-10 flex items-center justify-center">
+            <h1 className="w-full text-center text-xl lg:text-2xl font-semibold mt-10 flex items-center justify-center">
               Missão <Target className="ml-2 text-corRetratos animate-pulse" />
             </h1>
             <div className="w-full flex justify-center items-center mb-12">
@@ -145,7 +147,7 @@ export default function Page() {
             </p>
           </div>
           <div className="flex flex-col flex-1 justify-center items-center">
-            <h1 className="w-full text-center text-2xl font-semibold mt-10 flex items-center justify-center">
+            <h1 className="w-full text-center text-xl lg:text-2xl font-semibold mt-10 flex items-center justify-center">
               Valores <Heart className="ml-2 text-corRetratos animate-pulse" />
             </h1>
             <div className="w-full flex justify-center items-center mb-12">
@@ -185,12 +187,12 @@ export default function Page() {
         </div>
       </div>
       <div
-        className="w-full flex items-center justify-center pb-10 bg-opacity-20 text-lg"
+        className="w-full flex items-center justify-center pb-10 bg-opacity-20 text-base lg:text-lg px-4"
         ref={sectionSession2}
       >
-        <div className=" w-[80%] flex space-x-10" id="missao">
+        <div className="w-full lg:w-[80%] flex flex-col lg:flex-row gap-10 lg:gap-10" id="missao">
           <div className="flex flex-col flex-1 justify-center items-center">
-            <h1 className="w-full text-center text-2xl font-semibold mt-10 flex items-center justify-center">
+            <h1 className="w-full text-center text-xl lg:text-2xl font-semibold mt-10 flex items-center justify-center">
               Estamos na Bahia nas cidades: <Building2 className="ml-2 text-corRetratos animate-pulse" />
             </h1>
             <div className="w-full flex justify-center items-center mb-12">
@@ -216,7 +218,7 @@ export default function Page() {
             </li>
           </div>
           <div className="flex flex-col flex-1 justify-center items-center">
-            <h1 className="w-full text-center text-2xl font-semibold mt-10 flex items-center justify-center">
+            <h1 className="w-full text-center text-xl lg:text-2xl font-semibold mt-10 flex items-center justify-center">
               ODS <Earth className="ml-2 text-corRetratos animate-pulse" />
             </h1>
             <div className="w-full flex justify-center items-center mb-12">
