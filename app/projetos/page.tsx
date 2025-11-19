@@ -135,10 +135,10 @@ export default function Page() {
     <div className="pt-16 lg:pt-0">
       <div className="w-full min-h-[97vh] relative flex items-center justify-center" ref={session1}>
         <Image alt="backgroung1" src={villa} fill className="object-cover" />
-        <div className="z-10 absolute bottom-10 lg:bottom-20 right-4 lg:right-20 bg-white rounded-xl py-3 lg:py-5 px-3 text-3xl lg:text-6xl">
+        <div className="z-10 absolute bottom-20 lg:bottom-20 left-4 lg:left-20 bg-white rounded-xl py-3 lg:py-5 px-3 text-3xl lg:text-6xl">
           <h1>Projetos</h1>
         </div>
-        <span className="z-10 absolute bottom-2 lg:bottom-9 right-4 lg:right-40 animate-pulse bg-white flex p-2 rounded-xl text-sm lg:text-base">
+        <span className="z-10 absolute bottom-10 lg:bottom-9 left-10 lg:left-40 animate-pulse bg-white flex p-2 rounded-xl text-sm lg:text-base">
           Rolar <ChevronsDown />
         </span>
       </div>
