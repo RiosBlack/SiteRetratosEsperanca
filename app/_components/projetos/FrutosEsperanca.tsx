@@ -61,7 +61,7 @@ export default function FrutosEsperanca() {
         </div>
       </div>
       <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base">
+        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base bg-white">
           O projeto Frutos de Esperança nasceu com a missão de trazer vida por meio daquilo que nos dá a vida: a natureza. Acreditamos que semeando consciência, colhemos transformação, e é exatamente isso que fazemos.
           <br />
           Nosso objetivo é educar, ensinar, transformar e conscientizar sobre a importância da preservação ambiental, promovendo ações que unem o cuidado com o meio ambiente ao desenvolvimento sustentável das comunidades atendidas.

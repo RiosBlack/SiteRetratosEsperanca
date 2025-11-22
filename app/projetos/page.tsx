@@ -13,6 +13,7 @@ import CineEsperanca from "../_components/projetos/CineEsperanca";
 import GeracaoRenda from "../_components/projetos/GeracaoRenda";
 import ArteEducacaoSemFronteiras from "../_components/projetos/ArteEducacaoSemFronteiras";
 import VilaEsperanca from "../_components/projetos/VilaEsperanca";
+import Caravanas from "../_components/projetos/Caravanas";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -159,6 +160,9 @@ export default function Page() {
       </div>
       <div ref={session6}>
         <ArteEducacaoSemFronteiras />
+      </div>
+      <div ref={session7}>
+        <Caravanas />
       </div>
     </div>
   );

@@ -56,7 +56,7 @@ export default function CozinhaComunitaria() {
         </div>
       </div>
       <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base">
+        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base bg-corRetratos/20">
           Na Vila Esperança, a transformação vai além da moradia, ela chegou também à mesa. Através da Cozinha Comunitária, garantíamos mais de 140 refeições diárias para as famílias atendidas, promovendo saúde, dignidade e cuidado em cada prato.
           <br />
           Antes do projeto, muitas dessas famílias não tinham acesso regular a legumes, frutas ou refeições completas. Hoje, oferecemos uma alimentação equilibrada, preparada com carinho e pensada para atender as necessidades nutricionais de crianças.

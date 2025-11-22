@@ -70,7 +70,7 @@ export default function VilaEsperanca() {
         </div>
       </div>
       <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-center text-sm lg:text-base">
+        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-center text-sm lg:text-base bg-white">
           A Vila Esperança é um símbolo vivo de transformação e solidariedade. O projeto nasceu em 2019, na cidade de Canudos (BA), com o objetivo de resgatar a dignidade de famílias que viviam em condições extremamente precárias.
           <br />
           Na época, mais de 20 famílias sobreviviam em casebres insalubres de pau a pique, sem acesso a água potável e em completa vulnerabilidade. Cada família dispunha de apenas 20 litros de água por mês, coletados após uma longa caminhada de mais de 3 quilômetros.

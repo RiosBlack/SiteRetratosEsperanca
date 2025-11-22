@@ -48,7 +48,7 @@ export default function GeracaoRenda() {
         </div>
       </div>
       <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base">
+        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base bg-white">
           Na Vila Esperança, acreditamos que a transformação verdadeira acontece quando oferecemos oportunidades para que as pessoas se tornem protagonistas de suas próprias histórias.
           <br />
           Por meio de oficinas profissionalizantes, capacitamos mulheres e moradores da comunidade em atividades como artesanato e produção de materiais para comercialização. Além de aprenderem um ofício, os participantes ganham autoestima, independência financeira e a possibilidade de sonhar mais alto.

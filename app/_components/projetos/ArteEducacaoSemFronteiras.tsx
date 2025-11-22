@@ -65,7 +65,7 @@ export default function ArteEducacaoSemFronteiras() {
         </div>
       </div>
       <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base">
+        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base bg-corRetratos/20">
           Na Vila Esperança, acreditamos que a educação é a chave para quebrar ciclos de pobreza e abrir portas para um futuro com mais oportunidades. Por isso, o projeto Arte e Educação Sem Fronteiras atua diariamente com ações educativas que transformam vidas desde a infância até a fase adulta.
           <br />
           Oferecemos reforço escolar contínuo para crianças, jovens e adultos, promovendo o acesso ao aprendizado de qualidade, um direito básico muitas vezes negado em comunidades vulneráveis.
