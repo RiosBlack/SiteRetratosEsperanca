@@ -57,7 +57,7 @@ export default function Page() {
   return (
     <div className="pt-16 lg:pt-0">
       <div className="min-h-screen">
-        <div className="relative flex justify-center items-center min-h-screen px-4 py-8">
+        <div className="relative flex justify-center items-center min-h-screen px-4 py-8 z-10">
           <div className="w-full max-w-4xl aspect-video">
             <iframe
               width="100%"
@@ -68,7 +68,7 @@ export default function Page() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-              className="rounded-2xl z-10"
+              className="rounded-2xl"
             ></iframe>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function Page() {
           src={background}
           fill
           objectFit="cover"
-          className="opacity-30"
+          className="opacity-30 z-0"
         />
       </div>
       <div
