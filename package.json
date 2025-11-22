@@ -10,6 +10,7 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
     "@notionhq/client": "^2.3.0",
     "@radix-ui/react-hover-card": "^1.1.6",
     "@radix-ui/react-label": "^2.1.2",
@@ -26,8 +27,11 @@
     "next": "14.2.25",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.66.1",
+    "resend": "^6.5.2",
     "tailwind-merge": "^3.0.2",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@slicemachine/adapter-next": "^0.3.72",
