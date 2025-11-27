@@ -9,6 +9,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { Button } from "../_components/ui/button";
 import Link from "next/link";
+import whatsapp from "@/app/public/whatsLogo.png";
 
 export default function Page() {
   const cardsData = [
@@ -17,18 +18,6 @@ export default function Page() {
       title: "ALIMENTO",
       desc: "Ajude-nos a levar alimento para milhares de pessoas que ainda passam fome no sertão.",
       valor: "50,00",
-    },
-    {
-      image: foto2,
-      title: "CONSTRUÇÃO DE CASAS",
-      desc: "6 a cada 10 pessoas vivem em casas de taipa, sem banheiro e água encanada.",
-      valor: "150,00",
-    },
-    {
-      image: foto2,
-      title: "CONSTRUÇÃO DE CASAS",
-      desc: "6 a cada 10 pessoas vivem em casas de taipa, sem banheiro e água encanada.",
-      valor: "150,00",
     },
     {
       image: foto2,
@@ -97,7 +86,7 @@ export default function Page() {
 
   return (
     <div className="pt-16 lg:pt-0">
-      <div className="relative w-full h-[95vh]">
+      <div className="relative w-full">
         <Image
           alt="background"
           src={foto}
@@ -116,16 +105,44 @@ export default function Page() {
         </div>
       </div>
       <div
-        className="w-full min-h-screen lg:h-screen flex flex-col items-center px-4 lg:px-0"
+        className="w-full min-h-screen flex flex-col items-center px-4 lg:px-0"
         ref={sectionSession1}
       >
         <h1 className="w-full text-center text-xl md:text-2xl font-semibold mt-10">
-          Como Doar?
+          Como Ajudar: Apadrinhe e Transforme Vidas
         </h1>
+        <p>
+          Apadrinhar é mais do que um gesto de generosidade, é uma verdadeira demonstração de amor e solidariedade. Ao apadrinhar um projeto, você contribui diretamente para a manutenção e continuidade das ações que estão transformando vidas nas comunidades atendidas, especialmente na Vila Esperança.
+          O apadrinhamento é uma forma de garantir que as famílias e as crianças possam ter acesso a moradia digna, educação, saúde, alimentação e oportunidades. Com o seu apoio, podemos manter as iniciativas de educação, saúde, geração de renda, cultura e infraestrutura, garantindo que vidas e realidades continuem a ser transformadas de forma constante.
+          Apadrinhe. Apadrinhar é amar.
+          Juntos, podemos continuar semeando esperança, dignidade e oportunidades para aqueles que mais precisam.
+        </p>
+        <div>
+          <div>
+            <Link href="https://fraternidadesemfronteiras.colabore.org/apadrinheretratos/single_step" target="_blank">
+              <Button>
+                Apadrinhe Pessoa Física
+              </Button>
+            </Link>
+            <Link href="https://fraternidadesemfronteiras.colabore.org/apadrinhepjretratos/single_step" target="_blank">
+              <Button>
+                Apadrinhe Pessoa Jurídica
+              </Button>
+            </Link>
+          </div>
+          <p>
+            - Juntos, podemos continuar semeando esperança, dignidade e oportunidades para aqueles que mais precisam.
+          </p>
+        </div>
         <div className="w-full flex justify-center items-center">
           <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-full md:w-[90%] lg:w-[80%] gap-4 mt-10">
+        <p>
+          Doação avulsa
+          - Qualquer valor é sempre bem-vindo e é fundamental para continuarmos o nosso trabalho e mantermos os projetos vivos e em constante transformação. Sua ajuda, ajuda a garantir acesso à educação, saúde, moradia e dignidade para as famílias da Vila Esperança e outras comunidades atendidas.
+          - Se você deseja que sua doação seja destinada a uma área específica, como educação, saúde, geração de renda ou infraestrutura, basta informar sua preferência ao preencher o formulário de doação.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 w-full md:w-[90%] lg:w-[80%] gap-4 mt-10">
           {cardsData.map((item, index) => (
             <div
               ref={(el) => {
@@ -146,6 +163,31 @@ export default function Page() {
               />
             </div>
           ))}
+          <h3>
+            Doação de materiais e insumos
+          </h3>
+          <p>
+            - Além de doações financeiras, também aceitamos qualquer outro tipo de contribuição que possa fazer a diferença na vida de quem mais precisa. Você pode doar:
+            -Roupas e calçados
+            -Materiais escolares
+            -Brinquedos
+            -Cestas básicas
+            -Produtos de higiene pessoal, entre outros.
+            Se você tem algo a oferecer, entre em contato conosco! Juntos, encontraremos a melhor maneira de garantir que sua doação chegue até quem precisa.
+          </p>
+          <div>
+            <Link href={"/contato"}>
+              <Button>
+                Entre em contato
+              </Button>
+            </Link>
+            <Link href={"/contato"}>
+              <Button>
+                <Image src={whatsapp} alt="whatsapp" width={20} height={20} />
+                Whatsapp
+              </Button>
+            </Link>
+          </div>
         </div>
       </div>
       <div
