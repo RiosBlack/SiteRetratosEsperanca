@@ -32,63 +32,89 @@ export default function FrutosEsperanca() {
   const frutosEsperancaTag = [
     {
       title: "Plantando o futuro cuidando do presente",
-      logo: <Sprout className="w-10 h-10" />,
+      logo: <Sprout className="w-12 h-12" />,
     },
     {
       title: "Trazer vida a partir daquilo que nos dá a vida",
-      logo: <Shrub className="w-10 h-10" />,
+      logo: <Shrub className="w-12 h-12" />,
     },
     {
       title:
         "Temos o objetivo de educar, ensinar, transformar e conscientizar sobre a importância da conservação da natureza por meio de práticas de reflorestamento em viveiros",
-      logo: <Leaf className="w-10 h-10" />,
+      logo: <Leaf className="w-12 h-12" />,
     },
     {
       title:
         "Atuamos com a construção de hortas comunitárias para o desenvolvimento sustentável das comunidades e reeducação alimentar com hábitos saudáveis",
-      logo: <Citrus className="w-10 h-10" />,
+      logo: <Citrus className="w-12 h-12" />,
     },
   ];
 
   return (
-    <div className="w-full min-h-screen lg:h-screen flex flex-col justify-center items-center pb-6 bg-corRetratos bg-opacity-20 px-4 lg:px-0">
-      <div className="pt-6">
-        <h1 className="w-full text-center text-xl lg:text-2xl font-semibold px-4">
-          Frutos de Esperança: Plantando o Futuro, Cuidando do Presente
-        </h1>
-        <div className="w-full flex justify-center items-center">
-          <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
-        </div>
-      </div>
-      <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base bg-white">
-          O projeto Frutos de Esperança nasceu com a missão de trazer vida por meio daquilo que nos dá a vida: a natureza. Acreditamos que semeando consciência, colhemos transformação, e é exatamente isso que fazemos.
-          <br />
-          Nosso objetivo é educar, ensinar, transformar e conscientizar sobre a importância da preservação ambiental, promovendo ações que unem o cuidado com o meio ambiente ao desenvolvimento sustentável das comunidades atendidas.
-          <br />
-          - Reflorestamento em viveiros, com o plantio de mudas nativas e educação ambiental;
-          <br />
-          - Construção de hortas comunitárias, fortalecendo a segurança alimentar e incentivando a produção local;
-          <br />
-          - Reeducação alimentar, com foco em hábitos saudáveis, sustentabilidade e aproveitamento dos recursos naturais.
-          <br />
-          Ao integrar natureza, educação e alimentação saudável, o Frutos de Esperança ajuda a construir um presente mais consciente e um futuro mais verde para todos.
-          Vamos juntos cultivar esperança, uma muda, uma horta, uma comunidade de cada vez.
-        </div>
-        <div className="flex-1 relative rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none overflow-hidden border-2 border-corRetratos min-h-[300px]" ref={imageRef}>
-          <Image alt="Foto do carrossel" src={images[currentImageIndex]} fill objectFit="cover" />
-        </div>
-      </div>
-      <div className="w-full lg:w-[80%] mt-3 grid grid-cols-1 lg:flex lg:space-x-2 gap-4 lg:gap-0 px-4 lg:px-0">
-        {frutosEsperancaTag.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col space-y-2 items-center mt-2 rounded-xl overflow-hidden p-2 flex-1"
-          >
-            <div>{item.logo}</div>
-            <h1 className="text-center">{item.title}</h1>
+    <div className="w-full min-h-screen flex flex-col justify-center items-center py-16 bg-white px-4 lg:px-0">
+      <div className="w-full max-w-7xl">
+        {/* Título */}
+        <div className="mb-12">
+          <h1 className="w-full text-center text-3xl md:text-4xl lg:text-5xl font-bold text-[#3E529D] px-4 mb-6">
+            FRUTOS DE ESPERANÇA: PLANTANDO O FUTURO, CUIDANDO DO PRESENTE
+          </h1>
+          <div className="w-full flex justify-center items-center">
+            <div className="w-32 border-b-4 border-[#3E529D]"></div>
           </div>
-        ))}
+        </div>
+
+        {/* Layout Principal - Foto à esquerda, Texto à direita */}
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
+          {/* Seção de Imagem - Lado Esquerdo */}
+          <div
+            className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl"
+            ref={imageRef}
+          >
+            <Image 
+              alt="Foto do carrossel" 
+              src={images[currentImageIndex]} 
+              fill 
+              objectFit="cover"
+              className="object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#3E529D]/20 via-transparent to-transparent"></div>
+          </div>
+
+          {/* Seção de Texto - Lado Direito */}
+          <div className="flex flex-col justify-center space-y-6">
+            <div className="bg-[#3E529D]/5 rounded-2xl p-6 md:p-8 lg:p-10 border-l-4 border-[#3E529D]">
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed text-justify mb-4">
+                O projeto <span className="font-semibold text-[#3E529D]">Frutos de Esperança</span> nasceu com a missão de <span className="font-semibold">trazer vida por meio daquilo que nos dá a vida: a natureza</span>. Acreditamos que semeando consciência, colhemos transformação, e é exatamente isso que fazemos.
+              </p>
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed text-justify mb-4">
+                Nosso objetivo é <span className="font-semibold text-[#3E529D]">educar, ensinar, transformar e conscientizar</span> sobre a importância da preservação ambiental, promovendo ações que unem o cuidado com o meio ambiente ao desenvolvimento sustentável das comunidades atendidas.
+              </p>
+              <ul className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed space-y-2 mb-4 list-disc list-inside">
+                <li><span className="font-semibold">Reflorestamento em viveiros</span>, com o plantio de mudas nativas e educação ambiental;</li>
+                <li><span className="font-semibold">Construção de hortas comunitárias</span>, fortalecendo a segurança alimentar e incentivando a produção local;</li>
+                <li><span className="font-semibold">Reeducação alimentar</span>, com foco em hábitos saudáveis, sustentabilidade e aproveitamento dos recursos naturais.</li>
+              </ul>
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed text-justify">
+                Ao integrar natureza, educação e alimentação saudável, o <span className="font-semibold text-[#3E529D]">Frutos de Esperança</span> ajuda a construir um presente mais consciente e um futuro mais verde para todos. Vamos juntos cultivar esperança, uma muda, uma horta, uma comunidade de cada vez.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Cards de Informações */}
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+          {frutosEsperancaTag.map((item, index) => (
+            <div
+              key={index}
+              className="bg-[#3E529D]/5 rounded-2xl p-6 flex flex-col items-center text-center space-y-4 border-2 border-[#3E529D]/20 hover:bg-[#3E529D]/10 transition-all duration-300"
+            >
+              <div className="text-[#3E529D]">{item.logo}</div>
+              <h2 className="text-gray-700 text-base md:text-lg font-semibold leading-relaxed">
+                {item.title}
+              </h2>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

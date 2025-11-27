@@ -32,56 +32,82 @@ export default function CozinhaComunitaria() {
   const cozinhaComunitariaTag = [
     {
       title: "Mais de 140 refeições diárias servidas na Vila Esperança",
-      logo: <Beef className="w-10 h-10 text-corRetratos" />,
+      logo: <Beef className="w-12 h-12 text-white" />,
     },
     {
-      title: "Muitos não tinha acesso a legumes e frutas",
-      logo: <Salad className="w-10 h-10" />,
+      title: "Muitos não tinham acesso a legumes e frutas",
+      logo: <Salad className="w-12 h-12 text-white" />,
     },
     {
       title:
         "Oferecemos uma alimentação de qualidade para as famílias atendidas",
-      logo: <ThumbsUp className="w-10 h-10 text-corRetratos" />,
+      logo: <ThumbsUp className="w-12 h-12 text-white" />,
     },
   ];
 
   return (
-    <div className="w-full min-h-screen lg:h-screen flex flex-col justify-center items-center pb-6 px-4 lg:px-0">
-      <div className="pt-6">
-        <h1 className="w-full text-center text-xl lg:text-2xl font-semibold px-4">
-          Cozinha Comunitária: Alimentando Corpos e Corações na Vila Esperança
-        </h1>
-        <div className="w-full flex justify-center items-center">
-          <div className="w-20 border-b-2 border-corRetratos mt-3"></div>
-        </div>
-      </div>
-      <div className="w-full lg:w-[80%] min-h-[60vh] lg:h-[90vh] grid grid-cols-1 lg:flex mt-5 shadow-xl">
-        <div className="flex-1 border-2 rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none border-corRetratos p-4 text-justify flex justify-center items-start text-sm lg:text-base bg-corRetratos/20">
-          Na Vila Esperança, a transformação vai além da moradia, ela chegou também à mesa. Através da Cozinha Comunitária, garantíamos mais de 140 refeições diárias para as famílias atendidas, promovendo saúde, dignidade e cuidado em cada prato.
-          <br />
-          Antes do projeto, muitas dessas famílias não tinham acesso regular a legumes, frutas ou refeições completas. Hoje, oferecemos uma alimentação equilibrada, preparada com carinho e pensada para atender as necessidades nutricionais de crianças.
-          <br />
-          Oferecemos alimentos frescos e nutritivos, contribuindo para o bem-estar e o desenvolvimento saudável de todos.
-          <br />
-          A Cozinha Comunitária é mais do que um espaço de alimentação, é um lugar de acolhimento, partilha e esperança.
-        </div>
-        <div
-          className="flex-1 relative rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none overflow-hidden border-2 border-corRetratos min-h-[300px]"
-          ref={imageRef}
-        >
-          <Image alt="Foto do carrossel" src={images[currentImageIndex]} fill objectFit="cover" />
-        </div>
-      </div>
-      <div className="w-full lg:w-[80%] mt-3 grid grid-cols-1 lg:flex lg:space-x-2 gap-4 lg:gap-0 px-4 lg:px-0">
-        {cozinhaComunitariaTag.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col space-y-2 items-center mt-2 rounded-xl overflow-hidden p-2 flex-1"
-          >
-            <div>{item.logo}</div>
-            <h1 className="text-center">{item.title}</h1>
+    <div className="w-full min-h-screen flex flex-col justify-center items-center py-16 bg-[#3E529D] px-4 lg:px-0">
+      <div className="w-full max-w-7xl">
+        {/* Título */}
+        <div className="mb-12">
+          <h1 className="w-full text-center text-3xl md:text-4xl lg:text-5xl font-bold text-white px-4 mb-6">
+            COZINHA COMUNITÁRIA: ALIMENTANDO CORPOS E CORAÇÕES
+          </h1>
+          <div className="w-full flex justify-center items-center">
+            <div className="w-32 border-b-4 border-white"></div>
           </div>
-        ))}
+        </div>
+
+        {/* Layout Principal - Texto à esquerda, Foto à direita */}
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
+          {/* Seção de Texto - Lado Esquerdo */}
+          <div className="flex flex-col justify-center space-y-6 order-2 lg:order-1">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8 lg:p-10 border-l-4 border-white">
+              <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed text-justify mb-4">
+                Na <span className="font-semibold">Vila Esperança</span>, a transformação vai além da moradia, ela chegou também à mesa. Através da <span className="font-semibold">Cozinha Comunitária</span>, garantíamos <span className="font-semibold text-white">mais de 140 refeições diárias</span> para as famílias atendidas, promovendo saúde, dignidade e cuidado em cada prato.
+              </p>
+              <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed text-justify mb-4">
+                Antes do projeto, <span className="font-semibold">muitas dessas famílias não tinham acesso regular a legumes, frutas ou refeições completas</span>. Hoje, oferecemos uma alimentação equilibrada, preparada com carinho e pensada para atender as necessidades nutricionais de crianças.
+              </p>
+              <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed text-justify mb-4">
+                Oferecemos <span className="font-semibold">alimentos frescos e nutritivos</span>, contribuindo para o bem-estar e o desenvolvimento saudável de todos.
+              </p>
+              <p className="text-base md:text-lg lg:text-xl text-white leading-relaxed text-justify">
+                A Cozinha Comunitária é mais do que um espaço de alimentação, é um lugar de <span className="font-semibold">acolhimento, partilha e esperança</span>.
+              </p>
+            </div>
+          </div>
+
+          {/* Seção de Imagem - Lado Direito */}
+          <div
+            className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl order-1 lg:order-2"
+            ref={imageRef}
+          >
+            <Image 
+              alt="Foto do carrossel" 
+              src={images[currentImageIndex]} 
+              fill 
+              objectFit="cover"
+              className="object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-bl from-[#3E529D]/20 via-transparent to-transparent"></div>
+          </div>
+        </div>
+
+        {/* Cards de Informações */}
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+          {cozinhaComunitariaTag.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 flex flex-col items-center text-center space-y-4 border-2 border-white/20 hover:bg-white/20 transition-all duration-300"
+            >
+              <div className="text-white">{item.logo}</div>
+              <h2 className="text-white text-base md:text-lg font-semibold leading-relaxed">
+                {item.title}
+              </h2>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

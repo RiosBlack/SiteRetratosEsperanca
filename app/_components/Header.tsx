@@ -74,6 +74,12 @@ export function Header() {
                 >
                   • Reforço escolar para crianças, jovens e adultos.
                 </ListItem>
+                <ListItem
+                  href="/projetos#Caravanas"
+                  title="Caravanas"
+                >
+                  • Imersão e vivência profunda junto à comunidade da Vila Esperança.
+                </ListItem>
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>
@@ -192,6 +198,9 @@ export function Header() {
                 </Link>
                 <Link href="/projetos#ArteEducacaoSemFronteiras" className="block py-2 px-4 hover:bg-gray-100 rounded" onClick={() => setIsMenuOpen(false)}>
                   Arte e Educação sem Fronteiras
+                </Link>
+                <Link href="/projetos#Caravanas" className="block py-2 px-4 hover:bg-gray-100 rounded" onClick={() => setIsMenuOpen(false)}>
+                  Caravanas
                 </Link>
               </div>
 

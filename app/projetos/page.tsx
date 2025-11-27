@@ -42,6 +42,9 @@ export default function Page() {
     if (window.location.hash === "#VilaEsperanca") {
       session7.current?.scrollIntoView({ behavior: "smooth" });
     }
+    if (window.location.hash === "#Caravanas") {
+      session7.current?.scrollIntoView({ behavior: "smooth" });
+    }
     gsap.fromTo(
       session1.current,
       { opacity: 0 },
@@ -134,14 +137,26 @@ export default function Page() {
 
   return (
     <div className="pt-16 lg:pt-0">
-      <div className="w-full min-h-[97vh] relative flex items-center justify-center" ref={session1}>
-        <Image alt="backgroung1" src={villa} fill className="object-cover" />
-        <div className="z-10 absolute bottom-20 lg:bottom-20 left-4 lg:left-20 bg-white rounded-xl py-3 lg:py-5 px-3 text-3xl lg:text-6xl">
-          <h1>Projetos</h1>
+      {/* Hero Section */}
+      <div className="w-full h-screen relative flex items-center justify-center" ref={session1}>
+        <Image
+          alt="background projetos"
+          src={villa}
+          fill
+          className="object-cover opacity-50"
+        />
+        <div className="absolute inset-0 bg-[#3E529D]/50"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 mt-16">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-2xl">
+            PROJETOS
+          </h1>
+          <p className="text-lg md:text-xl lg:text-2xl text-white mb-12 max-w-3xl drop-shadow-lg leading-relaxed">
+            Conheça nossas iniciativas que transformam vidas e semeiam esperança
+          </p>
+          <span className="absolute bottom-0 animate-bounce text-white cursor-pointer">
+            <ChevronsDown size={40} />
+          </span>
         </div>
-        <span className="z-10 absolute bottom-10 lg:bottom-9 left-10 lg:left-40 animate-pulse bg-white flex p-2 rounded-xl text-sm lg:text-base">
-          Rolar <ChevronsDown />
-        </span>
       </div>
       <div ref={session7}>
         <VilaEsperanca />
