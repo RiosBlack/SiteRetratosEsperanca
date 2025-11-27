@@ -1,8 +1,6 @@
 import React from 'react'
 
-type Props = {}
-
-export default function Page({ }: Props) {
+export default function Page() {
   return (
     <div className='flex justify-center items-center h-screen w-screen'>Pagina disponível em breve</div>
   )
