@@ -40,7 +40,7 @@ export default function Page() {
       session6.current?.scrollIntoView({ behavior: "smooth" });
     }
     if (window.location.hash === "#VilaEsperanca") {
-      session7.current?.scrollIntoView({ behavior: "smooth" });
+      session1.current?.scrollIntoView({ behavior: "smooth" });
     }
     if (window.location.hash === "#Caravanas") {
       session7.current?.scrollIntoView({ behavior: "smooth" });
@@ -158,7 +158,7 @@ export default function Page() {
           </span>
         </div>
       </div>
-      <div ref={session7}>
+      <div>
         <VilaEsperanca />
       </div>
       <div ref={session2}>
